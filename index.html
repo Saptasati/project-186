@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    
+        <script src="https://unpkg.com/aframe-spe-particles-component@^1.0.4/dist/aframe-spe-particles-component.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-camera position="0 0 30"></a-camera>
+
+            <a-sky color="black"></a-sky>
+
+
+            
+            <a-entity
+            position="10 -15 0" spe-particles = "
+             color: red, blue, yellow, white;
+             distribution: sphere;
+             randomize-velocity: true;
+             radius: 2;
+             particle-count: 3000;
+             velocity: 1;
+             velocity-spread: 20;
+             duration: -1;
+             drag: 1;
+             max-age: 2;
+             blending: additive;
+             active-multiplier: 1000;
+             size: 1, 1, 0;">
+            </a-entity>
+            <a-entity
+            position="15 10 0" spe-particles = "
+             color: blue, cyan, green, yellow;
+             distribution: sphere;
+             randomize-velocity: true;
+             radius: 1;
+             particle-count: 4000;
+             velocity: 1;
+             velocity-spread: 20;
+             duration: -1;
+             drag: 1;
+             max-age: 2;
+             blending: additive;
+             active-multiplier: 1000;
+             size: 1, 1, 0;">
+            </a-entity>
+            <a-entity
+            position="-15 -10 0" spe-particles = "
+             color: white, blue, orange, purple;
+             distribution: sphere;
+             randomize-velocity: true;
+             radius: 1;
+             particle-count: 4000;
+             velocity: 1;
+             velocity-spread: 15;
+             duration: -1;
+             drag: 1;
+             max-age: 2;
+             blending: additive;
+             active-multiplier: 1000;
+             size: 1, 1, 0;">
+            </a-entity>
+            <a-entity
+            position="-25 10 0" spe-particles = "
+             color: indigo, cyan, blue, white;
+             distribution: sphere;
+             randomize-velocity: true;
+             radius: 3;
+             particle-count: 5000;
+             velocity: 1;
+             velocity-spread: 15;
+             duration: -1;
+             drag: 1;
+             max-age: 2;
+             blending: additive;
+             active-multiplier: 1000;
+             size: 1, 1, 0;">
+            </a-entity>
+            <a-entity
+            position="0 1 0" spe-particles = "
+             color: white, purple, yellow, violet;
+             distribution: sphere;
+             randomize-velocity: true;
+             radius: 1;
+             particle-count: 3000;
+             velocity: 1;
+             velocity-spread: 15;
+             duration: -1;
+             drag: 1;
+             max-age: 2;
+             blending: additive;
+             active-multiplier: 1000;
+             size: 1, 1, 0;">
+            </a-entity>
+        
+        </a-scene>
+
+    </body>
+</html>
